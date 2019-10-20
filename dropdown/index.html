@@ -6,14 +6,56 @@
 </head>
 <body class="background-grey_light">
 	<div class="container">
-		<div class="dropdown-button has-submenu">
-			<a class="dropdown-button_link">Hover me</a>
-			<ul class="dropdown-button_submenu">
-				<li class="dropdown-button_submenu_item">Item 1</li>
-				<li class="dropdown-button_submenu_item">Item 2</li>
-				<li class="dropdown-button_submenu_item">Item 3</li>
-			</ul>
-		</div>
+		<h1 class="heading-1">Dropdown Menu.</h1>
+		<nav class="nav">
+			<div class="dropdown dropdown-button has-submenu">
+				<a class="dropdown-button_link">Hover me</a>
+				<ul class="dropdown-button_submenu">
+					<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 2</a></li>
+					<li class="dropdown-button_submenu_item has-submenu dropdown-button">
+						<a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 1</a>
+						<ul class="dropdown-button_submenu">
+							<li class="dropdown-button_submenu_item has-submenu dropdown-button">
+								<a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 2</a>
+								<ul class="dropdown-button_submenu">
+									<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 2</a></li>
+									<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 3</a></li>
+								</ul>
+							</li>
+							<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 3</a></li>
+						</ul>
+					</li>
+					<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 3</a></li>
+				</ul>
+			</div>
+			<div class="dropdown dropdown-button has-submenu">
+				<a class="dropdown-button_link">Hover me</a>
+				<ul class="dropdown-button_submenu">
+					<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 2</a></li>
+					<li class="dropdown-button_submenu_item has-submenu dropdown-button">
+						<a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 1</a>
+						<ul class="dropdown-button_submenu">
+							<li class="dropdown-button_submenu_item has-submenu dropdown-button">
+								<a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 2</a>
+								<ul class="dropdown-button_submenu">
+									<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 2</a></li>
+									<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 3</a></li>
+								</ul>
+							</li>
+							<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 3</a></li>
+						</ul>
+					</li>
+					<li class="dropdown-button_submenu_item"><a class="dropdown-button_submenu_item_link" href="javascript:void(0)">Item 3</a></li>
+				</ul>
+			</div>
+			<div class="dropdown dropdown-button has-submenu" >
+				<a class="dropdown-button_link">Hover me</a>
+				<ul class="dropdown-button_submenu" id="custom_menu">
+
+				</ul>
+			</div>
+		</nav>
 	</div>
 </body>
+<script src="./main.js" type="text/javascript"></script>
 </html>
