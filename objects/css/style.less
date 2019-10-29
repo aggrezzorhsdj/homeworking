@@ -1,16 +1,72 @@
-body,html{
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body{
   margin:0;
   height: 100%;
-  font-family: sans-serif, 'Calibri';
+  font-family: 'Roboto Regular',sans-serif;
   font-size: 14px;
   color: #000;
 }
+*{
+  box-sizing: border-box;
+}
+.main-class{
+  background-color: #fdfbfa;
+}
 .container{
-  max-width: 1280px;
+  padding: 80px;
+  &__element{
+    margin-bottom: 20px;
+  }
 }
 .fields{
-  display: block;
-  &{
+  display: flex;
+  flex-wrap: wrap;
+  &_add{
     display: block;
   }
+  &__item{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    &__input{
+      padding: 10px 20px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #e8e8e8;
+      background: #ffffff;
+      transition: 0.2s ease-in;
+      &__error{
+        border-color: red;
+        color: red;
+      }
+      &:focus{
+        border-color: #a8a8a8;
+        color: #000;
+      }
+    }
+  }
+}
+.typo {
+  &__paragraph{
+    margin-bottom: 20px;
+    &__bold {
+      font-weight: bold;
+    }
+  }
+  &__heading {
+    &_center {
+      text-align: center;
+    }
+  }
+}
+.btn{
+  border: 1px solid #00b1fe;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: 'Roboto Regular';
+  color: #fff;
+  background-color: #00b1fe;
+  border-radius: 5px;
+}
+.result{
+  font-size: 50px;
 }

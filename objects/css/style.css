@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+* {
+  box-sizing: border-box;
+}
+.main-class {
+  background-color: #fdfbfa;
+}
+.container {
+  padding: 80px;
+}
+.container__element {
+  margin-bottom: 20px;
+}
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fields_add {
+  display: block;
+}
+.fields__item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.fields__item__input {
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #e8e8e8;
+  background: #ffffff;
+  transition: 0.2s ease-in;
+}
+.fields__item__input__error {
+  border-color: red;
+  color: red;
+}
+.fields__item__input:focus {
+  border-color: #a8a8a8;
+  color: #000;
+}
+.typo__paragraph {
+  margin-bottom: 20px;
+}
+.typo__paragraph__bold {
+  font-weight: bold;
+}
+.typo__heading_center {
+  text-align: center;
+}
+.btn {
+  border: 1px solid #00b1fe;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: 'Roboto Regular';
+  color: #fff;
+  background-color: #00b1fe;
+  border-radius: 5px;
+}
+.result {
+  font-size: 50px;
+}
