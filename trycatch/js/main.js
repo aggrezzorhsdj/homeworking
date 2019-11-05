@@ -15,7 +15,7 @@ function createTryCatch(selector,initiator){
                     }
 
                 } catch(e){
-                    return 'Ошибка ' + e.name + ":" + e.message + "\n" + e.stack;
+                    return 'Ошибка. Выберите другой вариант. Подробнее: ' + e.name + ":" + e.message + "\n" + e.stack;
                 }
             }
         });
