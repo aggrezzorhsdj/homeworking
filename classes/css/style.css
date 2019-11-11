@@ -1,0 +1,32 @@
+body,
+html {
+  font-family: sans-serif, 'Calibri';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+.heading-5,
+.heading-6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.heading-1._center,
+.heading-2._center,
+.heading-3._center,
+.heading-4._center,
+.heading-5._center,
+.heading-6._center {
+  text-align: center;
+}
+.section {
+  padding: 40px;
+}
