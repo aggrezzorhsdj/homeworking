@@ -1,3 +1,4 @@
+'use strict';
 function Human() {}
 Human.prototype.init = function(fullName) {
     this.fullName = fullName;
@@ -50,4 +51,38 @@ var woman = new Woman();
 woman.init('Vasili ivanovich');
 woman.print();
 
+class EpicHuman{
+    init(fullName){
+        this.fullName = fullName;
+    }
+    info(age,weight,height){
+        this.age = age;
+        this.weight = weight;
+        this.height = height;
+    }
+    print(){
+        console.log(this.fullName);
+    }
+
+}
+
+class EpicMan extends EpicHuman{
+    init(fullName){
+        this.fullName = 'Dorogoi ' + fullName;
+    }
+}
+
+class EpicWoman extends EpicHuman{
+    init(fullName){
+        this.fullName = 'Dorogaya ' + fullName;
+    }
+}
+
+var epicman = new EpicMan();
+epicman.init('Ivan Pupkin');
+epicman.print();
+
+var epicwoman = new EpicWoman();
+epicwoman.init('Natalya Petrova');
+epicwoman.print();
 
